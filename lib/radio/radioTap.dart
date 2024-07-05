@@ -5,6 +5,18 @@ class RadioTap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color:Colors.red,);
+    return Column(
+      children: [
+        SizedBox(height:140 ,),
+        Image.asset('assets/images/Radiobig.png'),
+        SizedBox( height: 30),
+        Text(
+          'Quran kareem Radio',
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
+        SizedBox( height: 45),
+        Image.asset('assets/images/Group 5.png')
+      ],
+    );
   }
 }
