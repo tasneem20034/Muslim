@@ -12,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex=0;
+  int selectedIndex=3;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Scaffold(
           appBar: AppBar(
             title: Text(
-              'Islami',
+              'Muslim',
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
@@ -39,11 +39,11 @@ class _HomeScreenState extends State<HomeScreen> {
               BottomNavigationBarItem(
                   icon: Image.asset('assets/images/radio.png'),label:"Radio"),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/sebha.png'),label:"Radio"),
+                  icon: Image.asset('assets/images/sebha.png'),label:"Sebha"),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/quran-quran-svgrepo-com.png'),label:"Radio"),
+                  icon: Image.asset('assets/images/quran-quran-svgrepo-com.png'),label:"Hadeeth"),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/quran.png'),label:"Radio")
+                  icon: Image.asset('assets/images/quran.png'),label:"Quran")
 
             ]),
           ),body: taps[selectedIndex],
